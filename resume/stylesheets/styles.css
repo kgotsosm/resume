@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+#intro {
+    color: white;
+    background-color: #202020;
+    padding-bottom: 2%;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 3%;
+}
+
+#main {
+    font-family: 'Golos Text', sans-serif;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    list-style: none;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tagline {
+    color: #ffdf6c;
+}
+
+h2,
+h3,
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Golos Text', sans-serif;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Golos Text', sans-serif;
+}
+.about-section {
+
+    padding: 10%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#skills {
+    padding: 5%;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+}
+
+.web-dev, .python, .java {
+    flex: 1;
+    height: 300px;
+    border-radius: 5%;
+    margin: 40px;
+}
+
+.web-dev {
+    background: url("../images/webdev.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.python {
+    background: url("../images/python.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.java {
+    background: url("../images/java.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.projects-section {
+
+    padding: 10%;
+}
