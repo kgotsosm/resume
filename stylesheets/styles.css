@@ -98,7 +98,7 @@ h2 {
     background-image: url("../images/tech.jpg");
     background-position: 90% 45%;
     background-repeat: no-repeat;
-    font-family: 'Golos Text', sans-serif;
+    font-family: 'Golos Text', 'Open Sans', sans-serif;
 }
 
 .article-text {
