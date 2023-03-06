@@ -49,10 +49,11 @@ img {
 
 }
 
-
+body {
+    margin: 0;
+}
 #main {
     font-family: 'Golos Text', sans-serif;
-    width: 100%;
 
 }
 
@@ -188,4 +189,5 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-family: 'Golos Text', sans-serif;
+    background-color: #ffdf6c;
 }
