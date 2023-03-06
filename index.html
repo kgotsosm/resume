@@ -113,18 +113,49 @@
             </article>
         </section>
 
-        <h4>View my other work:</h4>
-        <div class="boxes">
-            <a href="https://github.com/kgotsosm" target="_blank" class="github-logo"><img src="images/github-logo.png"
-                    alt="Github Icon"></a>
-            <a href="https://medium.com/@kgotsom" target="_blank" class="medium-logo"><img src="images/medium-logo.png"
-                    alt="Medium Icon"></a>
-        </div>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="form-container">
+                <div class="contact-box">
+                    <div class="left">
+                        <h3>Send An Email</h3>
 
+                        <form action="https://formsubmit.co/89737a9d4e3728a89635b0fd1fb8efb8" method="POST">
 
+                            <label for="subject">Subject</label>
+                            <select id="subject" class="field" name="subject" required>
+                                <option value="" disabled selected>Select a subject:</option>
+                                <option value="Interview Opportunity">Interview Opportunity</option>
+                                <option value="Collaboration Request">Collaboration Request</option>
+                                <option value="Website Feedback">Website Feedback</option>
+                            </select>
+
+                            <label for="name">Your Name</label>
+                            <input type="text" class="field" id="name" name="name" placeholder="Your Name:" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" class="field" id="email" name="email" placeholder="Your Email:" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" class="field" name="message" placeholder="Type your message here..."></textarea>
+
+                            <button class="button" target="_blank">Send</button>
+                        </form>
+
+                        </div>
+
+                    <div class="right">
+                        <h3 class="top-right">View My Other Work</h3>
+                        <div class="link-boxes">
+                            <a href="https://github.com/kgotsosm" target="_blank" class="github-logo"><img src="images/github-logo.png"
+                                                                                                           alt="Github Icon"></a>
+                            <a href="https://medium.com/@kgotsom" target="_blank" class="medium-logo"><img src="images/medium-logo.png"alt="Medium Icon"></a>
+                        </div>
+            </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <hr>
-
     <footer>
         Kgotso Makhalimele, 2023
     </footer>
