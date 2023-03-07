@@ -41,12 +41,11 @@
     color: #ffdf6c;
 }
 
-img {
-    border-radius: 50%;
+picture {
+    border-radius: 3%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 body {
