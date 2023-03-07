@@ -177,6 +177,7 @@ h2 {
     margin: 40px;
     padding: 30px;
     border: 1px solid #2ecc71;
+    max-width: 100%;
 
 }
 
