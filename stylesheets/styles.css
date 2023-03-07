@@ -93,34 +93,40 @@ h2 {
     z-index: 5;
 }
 
-.about-article {
+.about-container {
     display: flex;
-    z-index: -1;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-image: url("../images/tech.jpg");
-    background-position: 90% 45%;
-    background-repeat: no-repeat;
-    font-family: 'Golos Text', 'Open Sans', sans-serif;
+    max-width: 100%;
 }
 
-.article-text {
-
-    position: relative;
-    right: 600px;
+.article-box {
+    margin-left: 100px;
     top: 10px;
     bottom: 400px;
     width: 400px;
-    height: 450px;
+    min-height: 450px;
     background-color: #ffdf6c;
     max-height: 400px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
-    z-index: 1;
-    line-height: 18pt;
-    left: 200px;
+    z-index: 2;
     padding: 30px;
+}
+
+.article-text {
+    line-height: 18pt;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.image-box {
+    display: flex;
+    width: 600px;
+    max-height: 350px;
+    background-image: url("../images/tech.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
 }
 
 #skills {
@@ -167,6 +173,7 @@ h2 {
     display: flex;
     max-width: 100%;
     left: 30px;
+    left: 50px;
 }
 
 .first-project,
