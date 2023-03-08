@@ -49,8 +49,8 @@
 }
 
 .tagline {
-    color: #09f56b;
-    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: rgb(236, 144, 24);
 }
 
 body {
@@ -198,8 +198,7 @@ img {
 .first-project,
 .second-project,
 .third-project,
-.fourth-project,
-.fifth-project {
+.fourth-project{
     margin: 40px;
     padding: 30px;
     border: 1px solid #2ecc71;
