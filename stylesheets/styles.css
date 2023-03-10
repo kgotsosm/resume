@@ -58,14 +58,14 @@
         background-size: 100vh;
         background-repeat: no-repeat;
         margin: 0;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         border-radius: 0;
     }
 }
 
 .hero-add {
-    margin-top: 240px;
+    margin-top: 30vh;
     font-size: 3vw;
 }
 
@@ -87,6 +87,27 @@
 .tagline {
     color: black;
     background-color: rgb(236, 144, 24);
+}
+
+.mobile-img {
+    margin-top: 30vh;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 786px) {
+    .mobile-img {
+        display: hidden;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .banner .mobile-img {
+        display: block;
+        margin-top: 20vh;
+        border-radius: 5%;
+    }
 }
 
 body {
@@ -113,8 +134,16 @@ h3 {
     font-family: 'Golos Text', sans-serif;
 }
 
+@media screen and (max-width: 786px) {
+
+    h4 {
+        font-size: 2vw 2vh;
+
+    }
+}
+
 h4 {
-    font-size: 1.5vw;
+    font-size: 2vw 2vh;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Golos Text', sans-serif;
@@ -122,12 +151,13 @@ h4 {
 
 #about {
     padding: 5%;
+    width: 100vw;
 
 }
 
 @media screen and (max-width: 786px) {
     #about {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -147,7 +177,7 @@ h4 {
 
 .about-container {
     display: flex;
-    max-width: 100%;
+    align-items: center;
 }
 
 @media screen and (max-width: 786px) {
@@ -158,7 +188,20 @@ h4 {
     }
 }
 
+@media screen and (min-width: 786px) {
+    .about-container {
+        display: flex;
+        max-width: 40vw;
+        max-height: 90vh;
+
+    }
+}
+
 .profile-box {
+    display: flex;
+    background-image: url("images/profile.jpg");
+    max-width: 20vw;
+    max-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,39 +211,23 @@ h4 {
 
 @media screen and (max-width: 786px) {
     .profile-box {
-        display: flex;
-        width: 0;
-        height: 0;
+        display: hidden;
 
     }
 }
 
-.profile {
-    max-width: 220px;
-    max-height: 180px;
-}
 
 @media screen and (max-width: 786px) {
     .profile {
-        width: 0vw;
-        height: 0vh;
-        margin-right: 45vw;
-        z-index: 0;
+        display: hidden;
 
     }
 }
 
-img {
-    position: relative;
-    border-radius: 5%;
-    display: block;
-    margin: 5vh auto auto;
-    width: 200px;
-    height: 220px;
-}
 
 .article-box {
-    margin-left: 10px;
+    display: flexS;
+    margin-left: 10vw;
     top: 10px;
     bottom: 400px;
     max-width: 60vh;
@@ -218,14 +245,14 @@ img {
     .article-box {
         align-self: center;
         width: 80vw;
-        height: 60vh;
+        height: 70vh;
         padding: 5%;
         margin: 1.5vw;
     }
 }
 
 .article-text {
-    line-height: 4vh;
+    line-height: 3.6vh;
     margin-top: 20px;
     margin-bottom: 0px;
 }
@@ -238,22 +265,23 @@ img {
 
 .image-box {
     display: flex;
-    width: 600px;
-    max-height: 350px;
+    width: 40vw;
+    max-height: 25vw;
     background-image: url("../images/tech.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 @media screen and (max-width: 786px) {
     .image-box {
         display: flex;
-        background-image: none;
-        z-index: -10;
-        width: 0;
-        height: 0;
-
+        width: 40vw;
+        height: 25vw;
+        background-image: url("../images/tech.jpg");
+        background-size: cover;
+        background-position: center;
+        margin-top: 60px;
     }
 }
 
@@ -278,34 +306,22 @@ img {
 
 @media screen and (max-width: 786px) {
 
-    .web-dev {
-        width: 1vw;
-    }
-}
-
-.web-dev {
-    background: url("../images/webdev.jpg") no-repeat center;
-    background-size: cover;
-
-}
-
-@media screen and (max-width: 786px) {
-
-    .web-dev {
-        width: 10vw;
-    }
-}
-
-@media screen and (max-width: 786px) {
-
     .web-dev,
     .python,
     .java {
         width: 40vw;
         height: 15vh;
+        margin: 10px;
         z-index: 0;
 
     }
+}
+
+
+.web-dev {
+    background: url("../images/webdev.jpg") no-repeat center;
+    background-size: cover;
+
 }
 
 .python {
@@ -362,9 +378,17 @@ img {
 }
 
 .link-boxes a.github-logo img {
-    max-width: 20vw;
-    max-height: 20vh;
+    max-width: 15vw;
+    max-height: 15vh;
     margin-bottom: 80px;
+    left: 4vw;
+}
+
+@media screen and (max-width: 786px) {
+
+    .link-boxes a.github-logo img {
+        transform: scale(0.8);
+    }
 }
 
 .link-boxes a.medium-logo img {
@@ -372,7 +396,14 @@ img {
     max-height: 10vh;
     margin: 0 0 0 -70px;
     padding: 10px;
-    left: 20px;
+    left: 16vw;
+}
+
+@media screen and (max-width: 786px) {
+
+    .link-boxes a.medium-logo img {
+        transform: scale(0.8);
+    }
 }
 
 .link-boxes a.medium-logo img:hover,
@@ -390,6 +421,14 @@ img {
 
 }
 
+@media screen and (max-width: 786px) {
+
+    .form-container{
+        transform: scale(0.8);
+    }
+}
+
+
 .contact-box {
     max-width: 750px;
     max-height: 600px;
@@ -404,6 +443,12 @@ img {
     margin-top: 20px;
     padding: 30px;
 
+}
+@media screen and (max-width: 786px) {
+
+    .contact-box {
+        transform: scale(0.9);
+    }
 }
 
 .left {
