@@ -340,7 +340,7 @@ footer {
     padding-top: 25px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .name {
         text-align: center;
@@ -357,15 +357,26 @@ footer {
         border-radius: 5%;
     }
 
-    h4 {
-        font-size: 2vw 2vh;
+    h3 {
+        font-size: 20px;
+    }
 
+    h4 {
+        font-size: 12px;
     }
 
     #about {
         width: 100%;
         position: relative;
         padding: 0%;
+    }
+
+    .photo img {
+        border-radius: 3%;
+    }
+
+    .image-box {
+        display: hidden;
     }
 
     .about-container {
@@ -378,25 +389,19 @@ footer {
         background-color: #ffdf6c;
         position: relative;
         align-self: center;
-        width: 80vw;
+        font-size: 12px;
+        left: 15px;
+        width: 500px;
         height: 70vh;
         padding: 5%;
         margin: 1.5vw;
-    }
-
-    .article-text {
-        margin-top: 0;
-    }
-
-    .image-box {
-        display: hidden;
     }
 
     .web-dev,
     .python,
     .java {
         height: 140px;
-        width: 180px;
+        width: 200px;
         margin: 10px;
 
     }
@@ -404,6 +409,7 @@ footer {
     .projects-container {
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
     }
 
     .form-container {
@@ -429,7 +435,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .name {
         text-align: center;
         margin-top: 100px;
@@ -446,36 +452,28 @@ footer {
 
     }
 
-    #about {
-        width: 100%;
-        position: relative;
-        padding: 0%;
-    }
-
     .about-container {
         display: flex;
         max-height: 90vh;
 
     }
 
-    .photo {
+    .photo img {
         position: relative;
-        right: 50px;
+        right: 25px;
+        border-radius: 3%;
     }
 
     .article-box {
         background-color: #ffdf6c;
         position: relative;
         align-self: center;
-        width: 60vw;
-        height: 50vh;
+        font-size: 20px;
+        width: 400px;
+        height: 600px;
         padding: 5%;
         margin: 1.5vw;
         right: 50px;
-    }
-
-    .article-text {
-        margin-top: 0;
     }
 
     .image-box {
@@ -521,10 +519,11 @@ footer {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+
     .name {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 120px;
         font-size: 70px;
     }
 
@@ -537,19 +536,7 @@ footer {
 
     }
 
-    #about {
-        width: 100%;
-        position: relative;
-        padding: 0%;
-    }
-
-    .about-container {
-        display: flex;
-        max-height: 90vh;
-
-    }
-
-    .photo img{
+    .photo img {
         position: relative;
         right: 50px;
         border-radius: 3%;
@@ -557,21 +544,37 @@ footer {
         width: 200px;
     }
 
+    .web-dev,
+    .python,
+    .java {
+        flex: 1;
+        height: 300px;
+        border-radius: 5%;
+        margin: 40px;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 100%;
+        left: 30px;
+        left: 50px;
+    }
+
+
     .article-box {
         background-color: #ffdf6c;
         font-size: 20px;
         position: relative;
         align-self: center;
-        width: 240px;
+        width: 260px;
         height: 400px;
         padding: 3%;
         padding-bottom: 7%;
         margin: 1.5vw;
         right: 10px;
-    }
-
-    .article-text {
-        margin-top: 0;
     }
 
     .image-box {
@@ -587,7 +590,27 @@ footer {
         display: flex;
         overflow-x: hidden;
     }
+
     .link-boxes a.github-logo img {
         position: relative;
+    }
+
+    .form-container {
+        transform: scale(1.0);
+    }
+
+    .contact-box {
+        transform: scale(1.0);
+    }
+
+    .link-boxes a.github-logo img {
+        position: relative;
+        transform: scale(1.0);
+    }
+
+    .link-boxes a.medium-logo img {
+        position: relative;
+        left: 20px;
+        transform: scale(1.0);
     }
 }
